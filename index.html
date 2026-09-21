@@ -113,8 +113,8 @@
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
                         <div>
                             <div class="relative h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-                                <img src="${prod.photo}" alt="${prod.name}" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=500&q=80';">
-                                <span class="absolute top-3 left-3 bg-black bg-opacity-60 text-white text-xs px-2.5 py-1 rounded-full font-medium">📦 Qutida: ${prod.count_in_box} ta</span>
+                                <img src="${prod.photo}" alt="${prod.name}" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition duration-300" onclick="window.open('${prod.photo}', '_blank')" title="Rasmni to'liq ko'rish uchun bosing" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=500&q=80';">
+                                <span class="absolute top-3 left-3 bg-black bg-opacity-60 text-white text-xs px-2.5 py-1 rounded-full font-medium pointer-events-none">📦 Qutida: ${prod.count_in_box} ta</span>
                             </div>
                             <div class="p-4">
                                 <h3 class="font-bold text-lg mb-2">${prod.name}</h3>
